@@ -1,0 +1,158 @@
+/* Navbar */
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  backdrop-filter: blur(10px);
+  padding: 6px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+.navbar-actions {
+  margin-left: auto;
+}
+
+.light-theme .custom-navbar {
+  background: rgba(255,255,255,0.9);
+}
+.dark-theme .custom-navbar {
+  background: rgba(17,24,39,0.95);
+}
+
+
+/* Brand */
+.custom-navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Navbar Button Color Change */
+.light-theme .custom-navbar .navbar-brand {
+  color: #212529;
+}
+
+.dark-theme .custom-navbar .navbar-brand {
+  color: white;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: #c4b5fd;
+}
+
+/* Links */
+.custom-navbar .nav-link {
+  font-weight: 500;
+  margin-left: 6px;
+  transition: all 0.3s ease;
+}
+/* Navbar Button Color Change */
+.light-theme .custom-navbar .nav-link {
+  color: #212529;
+}
+
+.dark-theme .custom-navbar .nav-link {
+  color: white;
+}
+
+.custom-navbar .nav-link:hover {
+
+  color: #c4b5fd;
+  transform: translateY(-2px);
+}
+
+/* DarkMode TOGGLE BUTTON CSS */
+.theme-toggle {
+   min-width: 95px;
+}
+
+/* Toggle Switch */
+.theme-toggle-switch {
+  width: 60px;
+  height: 32px;
+  top:1px;
+  right:10px;
+
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background: #d1d5db;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-switch.active {
+  background: #6d28d9;
+}
+
+.toggle-thumb {
+  position: absolute;
+
+  top: 3px;
+  left: 4px;
+
+  width: 26px;
+  height: 26px;
+
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.theme-toggle-switch.active .toggle-thumb {
+  transform: translateX(28px);
+}
+
+/* MOBILE RESPONSIVE NAVBAR */
+@media (max-width: 991px) {
+
+  .custom-navbar .navbar-collapse {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .custom-navbar .navbar-nav {
+    margin: 10px 0;
+  }
+
+  .custom-navbar .nav-link {
+    margin-left: 0;
+    padding: 10px 0;
+  }
+
+  .navbar-actions {
+    margin-left: 0;
+    margin-top: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-navbar .navbar-brand {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .custom-navbar .navbar-brand {
+    font-size: 16px;
+  }
+
+  .theme-toggle-switch {
+    width: 55px;
+    height: 30px;
+  }
+
+  .toggle-thumb {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,150 @@
+/* *******Common Theme ************/
+.app-theme {
+  min-height: 100vh;
+  padding-top: 20px;
+}
+.light-theme .app-theme {
+  background: linear-gradient(
+    135deg,
+    white,
+    #baa9d9
+  );
+}
+
+.dark-theme .app-theme {
+  background: linear-gradient(
+    135deg,
+    #121212,
+    #1f1f1f
+  );
+}
+
+/* *******EMPLOYEES FILE CSS *********/
+.employees-page{
+  min-height: 100vh;
+}
+
+.employee-search{
+  max-width: 300px;
+}
+
+.employee-image{
+  height: 250px;
+  object-fit: contain;
+}
+
+.pagination-btn{
+  width: 120px;
+  transition: 0.3s;
+}
+
+.pagination-btn:hover{
+  background-color: #4338ca;
+}
+
+/* *******DARK MODE ALL CSS **********/
+.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+}
+.light-theme {
+  background-color: #f8f9fa;
+  color: #212529;
+  min-height: 100vh;
+}
+
+/* for cards */
+.dark-theme .card {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+/* Forms */
+.dark-theme .form-control {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border-color: #444;
+}
+.dark-theme .form-control:focus {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+.dark-theme .form-control::placeholder {
+  color: #bdbdbd;
+}
+
+/* Text */
+.dark-theme .text-muted {
+  color: #bdbdbd !important;
+}
+
+/* Tables */
+.dark-theme table {
+  color: #ffffff;
+}
+.dark-theme th,
+.dark-theme td {
+  border-color: #444;
+}
+
+/* Login Page */
+.dark-theme .login-page {
+  background-color: #121212;
+}
+.dark-theme .login-card {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+/* BODY DARK MODE */
+.dark-theme,
+.dark-theme body {
+  background-color: #121212;
+}
+
+.light-theme,
+.light-theme body {
+  background-color: #f8f9fa;
+}
+
+/* EMPLOYEES RESPONSIVE */
+@media (max-width: 576px) {
+
+  .employee-search {
+    width: 100%;
+  }
+
+  .employee-image {
+    height: 180px;
+  }
+
+  .employee-card h5 {
+    font-size: 18px;
+  }
+
+  .employee-card p {
+    font-size: 14px;
+  }
+
+  .pagination-btn {
+    width: 90px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+/* Toast Responsive */
+@media (max-width: 576px) {
+
+  .Toastify__toast-container {
+    width: 90% !important;
+    left: 5% !important;
+    right: 5% !important;
+  }
+
+  .Toastify__toast {
+    font-size: 14px;
+    min-height: 50px;
+  }
+}

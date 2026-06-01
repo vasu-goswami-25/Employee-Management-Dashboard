@@ -1,0 +1,105 @@
+/* Page Background */
+.add-page {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    white,
+    #baa9d9
+  );
+  padding-top: 40px;
+}
+
+/* Form Card */
+.add-card {
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  animation: fadeUp 0.8s ease;
+}
+
+.add-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12) !important;
+}
+
+/* Title */
+.add-title {
+  font-weight: 700;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 30px;
+
+  background: linear-gradient(
+    to right,
+    #2563eb,
+    #7c3aed
+  );
+
+   background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Inputs */
+.custom-input {
+  height: 52px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 10px rgba(37,99,235,0.2);
+}
+
+/* Button */
+.add-btn {
+  height: 52px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  transform: scale(1.02);
+}
+
+/* Animation */
+@keyframes fadeUp {
+
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  ADD EMPLOYEE RESPONSIVE */
+@media (max-width: 576px) {
+
+  .add-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .add-card {
+    padding: 20px !important;
+  }
+
+  .custom-input {
+    height: 48px;
+    font-size: 14px;
+  }
+
+  .add-btn {
+    height: 48px;
+    font-size: 15px;
+  }
+
+  .form-label {
+    font-size: 14px;
+  }
+}
